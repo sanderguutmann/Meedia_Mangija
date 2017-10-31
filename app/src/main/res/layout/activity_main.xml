@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sander.mediaplayer.MainActivity">
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:text="By checking the following checkbox you hearby agree to the terms and conditions of this class. The use of your time in this class is subject to the following terms of use: 1) Using each 45 minutes to the fullest by using and exercising your brain. 2) Showing initiative by finding more info on your own and completing your assignments on a timely manner. 3) Actively participating in lesson activities."
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree with conditions"
+        android:checked="false"
+        android:layout_below="@+id/terms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#CE1414" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onToggle"
+        android:text="ToggleButton"
+        android:background="#CE1414"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:layout_toEndOf="@+id/checkBox1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textColor="#CE1414"
+        android:layout_below="@+id/terms"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/watchVideo"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playVideo"
+        android:text="Video"
+        android:background="#CE1414"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_alignStart="@+id/toggleButton1" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_marginTop="23dp"
+        android:text="RadioButton"
+        android:onClick="onRadio"
+        android:textColor="#CE1414"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textColor="#CE1414"
+        android:layout_below="@+id/radioButton"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

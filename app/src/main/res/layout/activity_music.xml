@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sander.mediaplayer.MusicActivity"
+    android:background="#f0e442">
+
+    <Button
+        android:id="@+id/buttonPlay"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="156dp"
+        android:background="#ffff"
+        android:onClick="onMusicPlay"
+        android:text="play" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonPlay"
+        android:layout_alignStart="@+id/buttonPlay"
+        android:layout_below="@+id/buttonPlay"
+        android:layout_marginTop="56dp"
+        android:background="#ffff"
+        android:onClick="onMusicPause"
+        android:text="pause" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonPause"
+        android:layout_alignStart="@+id/buttonPause"
+        android:layout_below="@+id/buttonPause"
+        android:layout_marginTop="48dp"
+        android:background="#ffff"
+        android:onClick="onMusicStop"
+        android:text="Stop" />
+
+</RelativeLayout>
